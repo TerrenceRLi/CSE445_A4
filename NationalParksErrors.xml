@@ -1,23 +1,25 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- ERROR 1: wrong root name -->
 <NationalPark>
-	<!-- ERROR 1: wrong root -->
 
-	<NationalPark>
-		<!-- ERROR 2: missing Rating -->
-		<Name>Grand Canyon</Name>
-		<Name>Duplicate Name</Name>
-		<!-- ERROR 5 -->
+  <!-- ERROR 2: missing required attribute NearestAirport -->
+  <NationalPark>
 
-		<!-- ERROR 3: missing Phone -->
+    <!-- ERROR 5: duplicate Name -->
+    <Name>Grand Canyon</Name>
+    <Name>Duplicate Name</Name>
 
-		<Address>
-			<!-- ERROR 4: no closing tag -->
-			<Number>8</Number>
-			<Street>S Entrance Road</Street>
-			<City>Grand Canyon</City>
-			<State>AZ</State>
-			<Zip>86023</Zip>
+    <!-- ERROR 3: missing Phone -->
 
-		</NationalPark>
+    <!-- ERROR 4: Address not closed properly -->
+    <Address>
+      <Number>8</Number>
+      <Street>S Entrance Road</Street>
+      <City>Grand Canyon</City>
+      <State>AZ</State>
+      <Zip>86023</Zip>
+
+  </NationalPark>
 
 </NationalPark>
