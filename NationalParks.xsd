@@ -8,9 +8,10 @@
         <xs:element name="NationalPark" maxOccurs="unbounded">
           <xs:complexType>
             
-            <!-- ORDER MATTERS -->
+            <!-- Order Restrictions -->
             <xs:sequence>
-              
+
+              <!-- Single name -->
               <xs:element name="Name" type="xs:string"/>
 
               <!-- Multiple phones allowed -->
@@ -27,7 +28,7 @@
                     <xs:element name="Zip" type="xs:string"/>
                   </xs:sequence>
 
-                  <!-- REQUIRED attribute -->
+                  <!-- Required attribute -->
                   <xs:attribute name="NearestAirport" type="xs:string" use="required"/>
 
                 </xs:complexType>
@@ -35,7 +36,7 @@
 
             </xs:sequence>
 
-            <!-- OPTIONAL attribute -->
+            <!-- Optional attribute -->
             <xs:attribute name="Rating" type="xs:string" use="optional"/>
 
           </xs:complexType>
